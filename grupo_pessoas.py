@@ -18,6 +18,7 @@ for c in range(1, 5):
     elif genero == 'm':
         idade = int(input('Idade da pessoa {}: ' .format(c)))
         if man_young < idade:
+            man_young = idade
             man = name
     print('')
     
@@ -29,14 +30,3 @@ if man == '':
     print('Não há homens no grupo')
 else:
     print(f'Nome do homem mais velho: {man}')
-
-
-
-
-
-
-
-
-
-
-
