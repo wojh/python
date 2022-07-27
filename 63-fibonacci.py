@@ -20,18 +20,26 @@ print('')
 
 if n == 1:
     print(0)
-elif n == 2:
-    print(0, 1)
-elif n>2:
+elif n>1:
     print(0)
     print(1)
     count = 2   
-    fib_anterior = 1 
+    fib_anterior = 0  
     fib_atual = 1 
     fib = fib_atual + fib_anterior
-    while count < n:
+    while count <n:
         print(fib)
         count += 1 
         fib_anterior = fib_atual
         fib_atual = fib 
         fib = fib_anterior + fib_atual
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
