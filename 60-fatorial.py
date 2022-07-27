@@ -1,25 +1,31 @@
-# 60 - Faça um programa que leia um número qualquer
-# e mostre o seu fatorial. Com while e com for.
+# 60 - Faça um programa que leia um número qualquer e mostre o seu 
+# fatorial. Com while e com for.
 
-from time import sleep
 
-num = int(input("Insira um número inteiro positivo: "))
+n = int(input("Insira o número inteiro: "))
 print('')
 
-print("Pronto!!! Em 2 segundos calcularemos seu fatorial!")
-print("")
+# Com while
 
-for c in range(1, 3)
-    print(c)
-    sleep(2)
+if n == 0 or n == 1:
+    print(f"O fatorial de {n} é 1.")
+elif n>1:
+    count = (n - 1)
+    fat = n*count
+    count -= 1 
+    while count>1:
+        fat *= count
+        count -= 1 
+    print(f'O fatorial é {fat}')
 
-count = int(num - 1)
-prod = int(1)
 
-if num < 0:
-    print("Número Inválido!!! Precisa ser um número positivo!!!")
-elif num == 1 or num == 0:
-    print(f"Fatorial de {num} é 1")
-else:
-    while coun > 0:
-        prod 
+# Com for
+
+if n == 0 or n == 1:
+    print(f"O fatorial de {n} é 1.")
+elif n>1:
+    fat = n
+    for c in range(n-1, 1, -1):
+        fat = fat*c
+    print(f'O fatorial é {fat}')
+    
